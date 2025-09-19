@@ -16,8 +16,8 @@ try {
   if (typeof summarizer.generateMom !== 'function') {
     console.warn('summarizer.js loaded but generateMom not found — ignoring.');
     summarizer = null;
-  } else {
-    console.log('Loaded external summarizer.js');
+    console.log(summarizer);
+    
   }
 } catch (err) {
   console.log('No external summarizer.js found — using fallback summarizer.');
